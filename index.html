@@ -9,8 +9,13 @@
     <script src="main.js" async></script>
 </head>
 <body>
-    <div class="container"></div>
-    <button id="add">+</button>
-    <button id="take">-</button>
+    <div draggable="false" class="container"></div>
+    <div class="options">
+        <button onclick="add()">+</button>
+        <button onclick="subtract()">-</button>
+        <button onclick="clearAll()">Clear</button>
+        <button onclick="erase()">Erase</button>
+        <div><input type="color" name="" id=""></div>
+    </div>
 </body>
 </html>
