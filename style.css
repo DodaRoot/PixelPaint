@@ -1,13 +1,19 @@
 .container {
+    display: flex;
+    flex-direction: column;
     border: 2px solid black;
-    padding: 5px;
+    width: 820px;
+    height: 800px;
 }
 .madeRow {
     display: flex;
-    border: 2px solid violet;
+    flex: 1;
+    overflow: hidden;
+    height: fit-content;
+    width: 100%;
 }
 .madeCell {
-    display: flex;
+    border: 1px solid rgb(0, 0, 0);
+    width: 100%;
     padding: 5px;
-    border: 1px solid black;
 }
