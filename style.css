@@ -1,5 +1,5 @@
 body {
-    /* Just fixed a bug with draging the mouse */
+    /* Just fixed a bug with dragging the mouse */
     user-select: none;
 }
 .container {
@@ -21,6 +21,7 @@ body {
     width: 100%;
     padding: 5px;
 }
+
 .options {
     display: flex;
 }

@@ -3,6 +3,9 @@ let pixels = 7;
 let round = false;
 let color = 'black'
 let input = document.querySelector('input')
+let mouse = false;
+document.body.onmousedown = () => (mouse = true)
+document.body.onmouseup = () => (mouse = false)
 
 // Linking the DOM
 const container = document.querySelector('.container')
@@ -27,10 +30,10 @@ function makeRow () {
 function makeCel (madeRow) {
     const madeCel = document.createElement('div')
     madeCel.classList.add('madeCell')
-    madeCel.addEventListener('mousedown', () => {
-        madeCel.style.backgroundColor = color
-    })
     madeRow.appendChild(madeCel)
+    // Changing cel colors with mouse
+    madeCel.addEventListener('mouseover', pointer)
+    madeCel.addEventListener('mousedown', pointer)
 }
 
 function add () {
@@ -60,3 +63,12 @@ input.addEventListener('input', () => {
     color = input.value
 })
 
+
+// Had to look this one up its a function to draw when clicking
+// and holding the mouse over the div's
+function pointer (e) {
+    if (e.type === 'mouseover' && !mouse) return
+    else {
+        e.target.style.backgroundColor = color;
+    }
+}
