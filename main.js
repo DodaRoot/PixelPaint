@@ -17,7 +17,6 @@ function start () {
     } 
 }
 
-
 // Beginning logic functions to add div's
 function makeRow () {
     const madeRow = document.createElement('div')
@@ -27,6 +26,7 @@ function makeRow () {
         makeCel(madeRow)
     }
 }
+
 function makeCel (madeRow) {
     const madeCel = document.createElement('div')
     madeCel.classList.add('madeCell')
