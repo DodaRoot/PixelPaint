@@ -1,14 +1,22 @@
 body {
     /* Just fixed a bug with dragging the mouse */
     user-select: none;
+    background-color: bisque;
+    background-image: url(images/Image15.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
+
 .container {
+    background-color: aliceblue;
     display: flex;
     flex-direction: column;
     border: 2px solid black;
     width: 820px;
     height: 800px;
 }
+
 .madeRow {
     display: flex;
     flex: 1;
@@ -16,12 +24,88 @@ body {
     height: fit-content;
     width: 100%;
 }
+
 .madeCell {
     border: 1px solid rgb(0, 0, 0, 0.1);
     width: 100%;
     padding: 5px;
 }
 
+.allFather {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: -2% 8% 0% 8%;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+
+.title {
+    border: 2px solid black;
+    border-radius: 20px;
+    text-align: center;
+    margin: 0;
+    padding: 10px;
+    background-color: rgb(255, 255, 255, 0.2);
+    color: white;
+    margin: 0px 2% 5% 2%;
+}
+
 .options {
     display: flex;
+    flex-direction: column;
+    border: 2px solid black;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+    background-color: rgba(255, 111, 0, 0.8);
+    border-radius: 30px;
+}
+
+.addSub {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    gap: 15px;
+}
+
+.addSub button {
+    font-size: 30px;
+    width: 70px;
+    background-color: rgba(255, 0, 0, 0.5);
+}
+
+.pen {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    gap: 15px;
+}
+
+.pen button {
+    font-size: 30px;
+    width: 100px;
+    background-color: rgba(255, 0, 0, 0.5);
+}
+
+.color {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    gap: 15px;
+}
+
+.color button {
+    font-size: 20px;
+    width: 100px;
+    background-color: rgba(255, 0, 0, 0.5);
+}
+
+.color input {
+    height: 50px;
+    width: 50px;
+    background-color: rgba(255, 0, 0, 0.5);
 }

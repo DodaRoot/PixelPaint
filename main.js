@@ -1,5 +1,5 @@
 // Global Variables
-let pixels = 7;
+let pixels = 15;
 let round = false;
 let color = 'black'
 let input = document.querySelector('input')
@@ -57,6 +57,11 @@ function clearAll () {
 function erase () {
     randomColor = false;
     color = 'white'
+}
+
+function pen () {
+    randomColor = false;
+    color = 'black'
 }
 
 start()
